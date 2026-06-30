@@ -8,12 +8,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      letterSpacing: {
+        tight: '-0.02em',
+        tighter: '-0.04em',
       },
       colors: {
-        background: '#ffffff',
-        foreground: '#111111',
+        background: 'rgb(var(--background))',
+        foreground: 'rgb(var(--foreground))',
       },
     },
   },
